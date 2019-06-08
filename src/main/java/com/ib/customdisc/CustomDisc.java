@@ -5,9 +5,9 @@ import net.minecraft.client.resources.FolderResourcePack;
 import net.minecraft.client.resources.IResourcePack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
@@ -31,11 +31,11 @@ public class CustomDisc {
         }
 
         FolderResourcePack forDisc = new FolderResourcePack(new File("customdisc/"));
-        List<IResourcePack> defaultResourcePacks = ReflectionHelper.getPrivateValue(
-                Minecraft.class, Minecraft.getMinecraft(), "defaultResourcePacks");
+        List<IResourcePack> defaultResourcePacks = ObfuscationReflectionHelper.getPrivateValue(
+                Minecraft.class, Minecraft.getMinecraft(), "field_110449_ao");
         defaultResourcePacks.add(forDisc);
-        ReflectionHelper.setPrivateValue(
-                Minecraft.class, Minecraft.getMinecraft(), defaultResourcePacks, "defaultResourcePacks");
+        ObfuscationReflectionHelper.setPrivateValue(
+                Minecraft.class, Minecraft.getMinecraft(), defaultResourcePacks, "field_110449_ao");
 
         //I know it's deprecated but...
         Minecraft.getMinecraft().refreshResources();
