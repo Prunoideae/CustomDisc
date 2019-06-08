@@ -1,0 +1,22 @@
+{
+  "test1": {
+    "sounds": [
+      {
+        "name": "customdisc:test1",
+        "preload": true,
+        "stream": true
+      }
+    ],
+    "subtitle": "customdisc.subtitle.test1"
+  },
+  "test2": {
+    "sounds": [
+      {
+        "name": "customdisc:test2",
+        "preload": true,
+        "stream": true
+      }
+    ],
+    "subtitle": "customdisc.subtitle.test2"
+  }
+}
