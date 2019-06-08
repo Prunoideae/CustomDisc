@@ -1,2 +1,5 @@
 item.test1.name=LOREM
 item.test2.name=IPSUM
+
+item.record.test1.desc=IPSUM
+item.record.test2.desc=DOLOR
