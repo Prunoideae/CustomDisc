@@ -2,6 +2,9 @@ package com.ib.customdisc;
 
 import net.minecraftforge.common.config.Config;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 @Config(modid = CustomDisc.MODID, name = "custom_disc")
 public class DiscConfig {
     @Config.Name("Disc List")
@@ -10,6 +13,6 @@ public class DiscConfig {
     public static String[] discList = {};
 
     public static String[] getDiscList() {
-        return discList;
+        return new HashSet<>(Arrays.asList(discList)).toArray(new String[0]);
     }
 }
