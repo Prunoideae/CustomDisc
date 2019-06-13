@@ -7,3 +7,12 @@ To do so, follow the instructions below:
 2. Specify the disks' names you want to create in custom_disc.cfg in the config folder
 3. With the asset folder created, now you can put your audio file (must be .ogg file) into the folder, and modify every resource you want to.
    This setup is rather complex and tricky, so I made an example script in the repository and you can check it out.
+   
+   
+↓Version 1.1 updates
+
+As writing json files is hard, I wrote something to simplify the method, so now all you need is:
+1. Run the minecraft with the mod to generate the folders and config, then write all you want into the config.
+2. Now, the sounds.json and the models will be generated automatically, so just put your texture files and audio files into right location, and the code will do everything else.
+
+extra. If you want to try something more than the vanilla style texuture, you can also modify the json file in models/item to do what you like to do.
