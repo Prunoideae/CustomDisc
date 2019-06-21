@@ -13,6 +13,8 @@ To do so, follow the instructions below:
 
 As writing json files is hard, I wrote something to simplify the method, so now all you need is:
 1. Run the minecraft with the mod to generate the folders and config, then write all you want into the config.
+   IMPORTANT: the cfg name you write should only contains characters of 0-9, a-z (No upper case) and underscore(No spaces).
+   Writing a fix for this could be difficult, as it has tricky points of dealing with game register mechanism, so this won't change in the near future.
 2. Now, the sounds.json and the models will be generated automatically, so just put your texture files and audio files into right location, and the code will do everything else.
 
 extra. If you want to try something more than the vanilla style texuture, you can also modify the json file in models/item to do what you like to do.
