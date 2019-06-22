@@ -10,6 +10,8 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
@@ -41,6 +43,7 @@ public class CustomDisc {
         return root.toString();
     }
 
+    @SideOnly(Side.CLIENT)
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
