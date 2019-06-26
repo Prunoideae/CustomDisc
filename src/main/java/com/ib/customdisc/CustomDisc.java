@@ -23,7 +23,7 @@ import java.util.List;
         modid = CustomDisc.MODID,
         name = CustomDisc.NAME,
         version = CustomDisc.VERSION,
-        dependencies = "required-after:forge@[14.23.5.2838);")
+        dependencies = "required-after:forge@[14.23.5.2838,);")
 public class CustomDisc {
     public static final String MODID = "customdisc";
     public static final String NAME = "Custom Disc";
