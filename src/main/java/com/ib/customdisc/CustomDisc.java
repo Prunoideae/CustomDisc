@@ -19,11 +19,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-@Mod(modid = CustomDisc.MODID, name = CustomDisc.NAME, version = CustomDisc.VERSION)
+@Mod(
+        modid = CustomDisc.MODID,
+        name = CustomDisc.NAME,
+        version = CustomDisc.VERSION,
+        dependencies = "required-after:forge@[14.23.5.2838);")
 public class CustomDisc {
     public static final String MODID = "customdisc";
     public static final String NAME = "Custom Disc";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.3";
 
     private static Logger logger;
 
